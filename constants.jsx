@@ -1,11 +1,11 @@
 import React from 'react';
-import abacus1 from '../Deepa/assets/abacus-2.png';
-import abacus2 from '../Deepa/assets/abacus1.jpg';
-import tutorial1 from '../Deepa/assets/tutorial-1.jpg';
-import tutorial2 from '../Deepa/assets/tutorial-2.jpg';
-import jnv1 from '../Deepa/assets/jnv-1.jpg';
-import jnv2 from '../Deepa/assets/jnv-3.jpg';
-import hand from '../Deepa/assets/hadwrting-classes-1.jpg';
+import abacus1 from './assets/abacus-2.png';
+import abacus2 from './assets/abacus1.jpg';
+import tutorial1 from './assets/tutorial-1.jpg';
+import tutorial2 from './assets/tutorial-2.jpg';
+import jnv1 from './assets/jnv-1.jpg';
+import jnv2 from './assets/jnv-3.jpg';
+import hand from './assets/hadwrting-classes-1.jpg';
 
 import {
     BookOpen, Calculator, Award, Calendar, GraduationCap,
