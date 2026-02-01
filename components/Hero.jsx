@@ -58,7 +58,7 @@ const Hero = () => {
                                 className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-gray-900 border-2 border-gray-100 px-8 py-4 rounded-2xl font-bold hover:border-primary hover:text-primary transition-all shadow-sm"
                             >
                                 <Phone className="w-5 h-5" />
-                                Call Admissions
+                                Call - 9742416020
                             </a>
                         </div>
 
