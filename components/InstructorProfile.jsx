@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, GraduationCap, MapPin } from 'lucide-react';
 import { ACADEMY_INFO } from '../constants.jsx';
+import instructor from '../assets/deepa.jpeg';
 
 const InstructorProfile = () => {
     return (
@@ -16,7 +17,7 @@ const InstructorProfile = () => {
                     <div className="relative inline-block">
                         <div className="absolute -inset-4 bg-emerald-500/20 rounded-full blur-2xl"></div>
                         <img
-                            src="https://picsum.photos/seed/teacher/500/500"
+                            src={instructor}
                             alt={ACADEMY_INFO.instructor}
                             className="relative rounded-full w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 object-cover border-4 sm:border-8 border-white/10"
                         />
@@ -52,7 +53,7 @@ const InstructorProfile = () => {
 
                         <div className="space-y-4 text-emerald-100/80">
                             <p className="text-base sm:text-lg">
-                                With extensive experience as a <strong>{ACADEMY_INFO.role}</strong>, Jayalakshmi specializes in making complex mathematical concepts accessible and engaging for students of all ages.
+                                With extensive experience as a <strong>{ACADEMY_INFO.role}</strong>, {ACADEMY_INFO.instructor.split(' ')[0]} specializes in making complex mathematical concepts accessible and engaging for students of all ages.
                             </p>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                                 <div className="flex items-start gap-3">

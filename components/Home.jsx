@@ -17,8 +17,12 @@ const Home = () => {
             <Header />
             <ScrollToTop />
             <main>
-                <section id="home">
+                <section id="home" className="py-6">
                     <Hero />
+                </section>
+
+                <section id="instructor" className="py-24 bg-emerald-900 text-white">
+                    <InstructorProfile />
                 </section>
 
                 <section id="programs" className="py-24 bg-emerald-50/30">
@@ -41,9 +45,7 @@ const Home = () => {
                     <AboutAcademy />
                 </section>
 
-                <section id="instructor" className="py-24 bg-emerald-900 text-white">
-                    <InstructorProfile />
-                </section>
+                
 
                 <section className="py-24">
                     <WhyChooseUs />

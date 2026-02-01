@@ -1,4 +1,12 @@
 import React from 'react';
+import abacus1 from '../Deepa/assets/abacus-2.png';
+import abacus2 from '../Deepa/assets/abacus1.jpg';
+import tutorial1 from '../Deepa/assets/tutorial-1.jpg';
+import tutorial2 from '../Deepa/assets/tutorial-2.jpg';
+import jnv1 from '../Deepa/assets/jnv-1.jpg';
+import jnv2 from '../Deepa/assets/jnv-3.jpg';
+import hand from '../Deepa/assets/hadwrting-classes-1.jpg';
+
 import {
     BookOpen, Calculator, Award, Calendar, GraduationCap,
     Users, ShieldCheck, Star, Brain, Globe, FlaskConical,
@@ -6,110 +14,73 @@ import {
 } from 'lucide-react';
 
 export const ACADEMY_INFO = {
-    name: "Aryabhata Abacus & Vedic Maths",
-    location: "Bankapur Branch",
-    instructor: "Jyoti Hallayanavarmath",
-    qualifications: "M.Sc Mathematics",
+    name: "Aryabhata Abacus & Vedic Maths Haveri",
+    location: "Haveri 2nd Branch",
+    instructor: "Deepa S Ballari",
+    qualifications: "M.A., M.Ed.",
     role: "Senior Mathematics Lecturer",
-    affiliations: ["Greenary Academy (R)", "ISO Certified Company"],
-    phone: "919876543210", // Placeholder
-    whatsapp: "919876543210" // Placeholder
+    affiliations: ["Aryabhata Abacus & Vedic Maths", "ISO Certified Company", "Gyanasiri Gurukula Navodaya Coaching Center Haveri."],
+    phone: "9742416020",
+    whatsapp: "9742416020"
 };
 
 export const PROGRAMS = [
     {
-        id: "abacus",
-        title: "Abacus Classes",
-        headline: "Transform Your Child into a \"Human Calculator\" with Aryabhata Abacus",
-        description: "Boost your child's mental math speed, concentration, and cognitive skills through our certified Aryabhata Vedic Maths curriculum.",
-        detailDescription: "Aryabhata Abacus & Vedic Maths (a unit of Greenary Academy) is North Karnataka's premier ISO 9001:2015 Certified institute. With over 15 years of excellence, we don't just teach math; we activate your child's brain. Our program is designed to move children away from calculator dependency and toward mental mastery, as recognized in the 6th District Level Abacus Awards in Haveri.",
+        id: "abacus-vedic",
+        title: "Abacus & Vedic Maths",
+        headline: "Transform Your Child into a \"Human Calculator\"",
+        description: "Boost your child's mental math speed, concentration, and cognitive skills through our certified curriculum.",
+        detailDescription: "Aryabhata Abacus & Vedic Maths is a premier institute for brain development. We don't just teach math; we activate your child's brain. Our program is designed to move children away from calculator dependency and toward mental mastery.",
         icon: <Calculator className="w-8 h-8 text-primary" />,
-        image: "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=800&h=600&fit=crop",
-        secondImage: "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800&h=600&fit=crop",
+        image: abacus1,
+        secondImage: abacus2,
         features: [
-            "Whole Brain Development: Simultaneous activation of both Left (Logical) and Right (Creative) brain hemispheres.",
-            "Photographic Memory: Enhances the ability to visualize numbers and solve complex arithmetic instantly.",
-            "Competitive Edge: Specialized training for State and District level competitions and Navodaya exams.",
-            "10x Concentration: Proven techniques to improve focus, listening skills, and academic self-reliance."
+            "Whole Brain Development: Activation of Left & Right brain hemispheres.",
+            "Photographic Memory: Visualize numbers and solve instantly.",
+            "Competitive Edge: Training for State/District competitions.",
+            "10x Concentration: Proven techniques to improve focus."
         ],
         whyChoose: [
-            { title: "Scientifically Structured", desc: "Based on the ancient abacus tool combined with modern mental visualization techniques." },
-            { title: "Recognized Excellence", desc: "Organized the State Level Abacus Competition and winners of multiple District Awards." },
-            { title: "Flexible Learning", desc: "Weekend batches specifically designed for school-going children in Bankapur and Haveri." },
-            { title: "Life-Long Skills", desc: "Improves not just math, but also self-confidence, speed, and accuracy in all life challenges." }
+            { title: "Scientifically Structured", desc: "Ancient tools combined with modern techniques." },
+            { title: "Recognized Excellence", desc: "Winners of multiple awards." },
+            { title: "Life-Long Skills", desc: "Improves confidence, speed, and accuracy." },
+            { title: "Flexible Learning", desc: "Weekend batches available." }
         ],
         brainScience: {
-            left: ["Logical Thinking & Reasoning", "Number Skills & Calculation", "Analysis & Precision"],
-            right: ["Photographic Memory & Visualization", "Imagination & Intuition", "Creativity & Holistic Thought"]
+            left: ["Logical Thinking", "Number Skills", "Analysis"],
+            right: ["Photographic Memory", "Creativity", "Visualization"]
         },
         offerings: [
-            "Abacus & Vedic Maths: Primary focus on speed and brain gymnastics.",
-            "Calligraphy & Handwriting: Improving fine motor skills.",
-            "Competitive Coaching: Special batches for Navodaya and scholarship exams.",
-            "Holistic Skills: Spoken English, Yoga, and Karate classes are also available at the center."
+            "Abacus Levels: Systematic progression.",
+            "Vedic Maths: Speed techniques for higher grades.",
+            "Certification: Recognized course completion certificates.",
+            "Competitions: Platform to showcase talent."
         ],
         cta: {
-            text: "Give your child the Aryabhata advantage today. Visit our Bankapur branch or call for a Free Demo.",
-            location: "Opp. J.H. Patel Circle, Behind Geleyara Balaga Primary School, Haveri."
+            text: "Give your child the Aryabhata advantage today. Call for a Free Demo.",
+            location: "Haveri Branch"
         }
     },
     {
-        id: "fashion-designing",
-        title: "Fashion Designing",
-        headline: "Empower Your Creativity at the Aryabhata Institute of Fashion Designing",
-        description: "Unlock your potential in the world of fashion with Haveri’s premier ISO 9001:2015 Certified design institute.",
-        detailDescription: "Unlock your potential in the world of fashion with Haveri’s premier ISO 9001:2015 Certified design institute. A unit of Greenary Academy, we offer attractive vocational courses with a reliable fee structure designed for aspiring designers, entrepreneurs, and hobbyists. From traditional Aari work to modern fashion illustration, we provide the skills you need to start your own boutique or career.",
-        icon: <Palette className="w-8 h-8 text-primary" />,
-        image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop",
-        secondImage: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=600&fit=crop",
-        features: [
-            "Aari Work & Hand Embroidery: Master the intricate art of traditional bridal and boutique work.",
-            "Professional Makeup & Mehandi: Complete bridal transformation and artistic henna design modules.",
-            "Fashion Drawing & Illustration Masterclass: Learn to put your creative visions on paper.",
-            "Boutique Management: Gain the business knowledge to start and run your own fashion studio."
-        ],
-        whyChoose: [
-            { title: "ISO Certified Standards", desc: "Quality education recognized by international standards." },
-            { title: "Affordable Excellence", desc: "High-quality training with a \"Reliable Fee Structure\" (Basics starting from ₹1500)." },
-            { title: "Practical Training", desc: "Hands-on experience with real fabric, Aari frames, and makeup kits." },
-            { title: "Haveri's Trusted Center", desc: "Centrally located at Rajendra Nagar with 15+ years of teaching legacy." }
-        ],
-        durations: [
-            { title: "Certificate in Basics", duration: "3 Months", desc: "Foundation course" },
-            { title: "Diploma in Fashion Design", duration: "6 Months", desc: "Advanced techniques" },
-            { title: "Professional Master Course", duration: "1 Year", desc: "Complete industry readiness" }
-        ],
-        promo: {
-            title: "🔥 NEW YEAR 2026 SPECIAL OFFER",
-            discount: "20% OFF on all 3-month courses!",
-            validity: "Offer valid until January 05.",
-            bonus: "Bonus: Present our digital pamphlet and get an additional 5% discount on spot admissions."
-        },
-        cta: {
-            text: "Start your fashion journey today. Limited seats available for the new batch!",
-            location: "Rajendra Nagar, Haveri"
-        }
-    },
-    {
-        id: "tuitions",
-        title: "Regular School Tuitions",
+        id: "daily-tuitions",
+        title: "Daily Tutions",
         headline: "Expert Tuitions for Academic Excellence: Class 1 to Class 10",
         description: "Personalized attention for students from primary to high school, focusing on fundamental concepts and exam excellence.",
-        detailDescription: "Is your child struggling with complex school subjects or losing confidence in exams? At Greenary Academy, we provide a nurturing and disciplined environment where learning becomes a joy. Led by Jayalakshmi Ma’am (MSc Mathematics), our systematic teaching approach ensures every student masters their school curriculum and achieves top marks in their board and school exams.",
+        detailDescription: "Is your child struggling with complex school subjects or losing confidence in exams? At our academy, we provide a nurturing and disciplined environment where learning becomes a joy. Led by Deepa S Ballari, our systematic teaching approach ensures every student masters their school curriculum and achieves top marks in their board and school exams.",
         icon: <BookOpen className="w-8 h-8 text-primary" />,
-        image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
-        secondImage: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&h=600&fit=crop",
+        image: tutorial1,
+        secondImage: tutorial2,
         features: [
-            "Subject Mastery (Focus on Maths & Science): In-depth explanation of concepts to build a strong foundation, especially in Mathematics and Science.",
-            "Small Batch Sizes: Personalized attention for every student, ensuring no child is left behind in a crowded classroom.",
-            "Homework & Assignment Support: Daily guidance to help students complete school work while truly understanding the logic behind it.",
-            "Regular Progress Monitoring: Periodic tests and parent-teacher meetings to track and improve performance consistently."
+            "Subject Mastery (Focus on Maths & Science)",
+            "Small Batch Sizes for Personalized Attention",
+            "Homework & Assignment Support",
+            "Regular Progress Monitoring & Tests"
         ],
         whyChoose: [
-            { title: "Highly Qualified Faculty", desc: "Benefit from the expertise of an MSc Mathematics Lecturer with years of teaching experience." },
-            { title: "ISO 9001:2015 Certified System", desc: "We follow an international standard of educational management for predictable, high-quality results." },
-            { title: "Safe & Disciplined Environment", desc: "A professional academy setting located conveniently at the Bankapur branch." },
-            { title: "Exam-Oriented Preparation", desc: "Special focus on 7th, 8th, 9th, and 10th-grade board exam preparation and time management." }
+            { title: "Highly Qualified Faculty", desc: "Benefit from the expertise of Deepa S Ballari (M.A., M.Ed.)." },
+            { title: "Disciplined Environment", desc: "A professional academy setting designed for focused learning." },
+            { title: "Exam-Oriented Preparation", desc: "Special focus on board exam preparation and time management." },
+            { title: "Concept Clarity", desc: "In-depth explanation of concepts to build a strong foundation." }
         ],
         durations: [
             { title: "Primary Section", duration: "Class 1-4", desc: "All subjects - focus on basics." },
@@ -119,126 +90,85 @@ export const PROGRAMS = [
         keyDetails: [
             { label: "Batch Timings", value: "Evening batches (Post-school hours)." },
             { label: "Focus Area", value: "Concept clearing, Note-making, and Weekly Tests." },
-            { label: "Location", value: "Opp. J.H. Patel Circle, Behind Geleyara Balaga Primary School, Haveri." }
+            { label: "Location", value: "Gyanasiri Gurukula Navodaya Coaching Center Haveri." }
         ],
         cta: {
-            text: "Give your child the academic edge they deserve. Enroll now for the new term!",
-            location: "Bankapur Branch"
+            text: "Give your child the academic edge they deserve. Enroll now!",
+            location: "Haveri Branch"
         }
     },
     {
-        id: "navodaya",
-        title: "Navodaya Coaching",
+        id: "navodaya-coaching",
+        title: "Navodaya Coaching Centre",
         headline: "Secure Your Child’s Future: Expert Navodaya Entrance Coaching",
         description: "Intensive training for JNV entrance exams. We provide structured materials and rigorous practice to ensure selection.",
-        detailDescription: "Admission into Jawahar Navodaya Vidyalayas (JNV) is a dream for every student. At Greenary Academy, we provide specialized coaching for the JNV Selection Test (JNVST). Under the expert guidance of Jayalakshmi Ma'am (MSc Mathematics), we transform 5th-grade students into high-achievers through a rigorous, disciplined, and result-oriented curriculum at our Bankapur branch.",
+        detailDescription: "Admission into Jawahar Navodaya Vidyalayas (JNV) is a dream for every student. We provide specialized coaching for the JNV Selection Test (JNVST). Under expert guidance, we transform students into high-achievers through a rigorous, disciplined, and result-oriented curriculum.",
         icon: <GraduationCap className="w-8 h-8 text-primary" />,
-        image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop",
-        secondImage: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=800&h=600&fit=crop",
+        image: jnv1,
+        secondImage: jnv2,
         features: [
-            "Mental Ability Mastery: Intensive training in 10 different types of figure-based reasoning and logical patterns (50% of the exam).",
-            "Arithmetic Excellence: Simplifying complex math problems with Vedic Math techniques to ensure 100% accuracy and speed.",
-            "Language Proficiency: Building strong reading comprehension and grammar skills in Kannada/English.",
-            "The Mock Test Series: Weekly OMR-based practice exams to eliminate exam fear and master time management."
+            "Mental Ability Mastery: Intensive training in logical patterns.",
+            "Arithmetic Excellence: Simplifying complex math problems.",
+            "Language Proficiency: Building strong reading comprehension.",
+            "Mock Test Series: Weekly OMR-based practice exams."
         ],
         whyChoose: [
-            { title: "Expert Faculty", desc: "Classes led by a Mathematics Lecturer (MSc) who understands the nuances of competitive exams." },
-            { title: "ISO 9001:2015 Standards", desc: "A systematic approach to coaching that ensures no topic is left behind." },
-            { title: "Daily Practice Materials", desc: "Specialized workbooks and previous years' question paper analysis." },
-            { title: "Proven Track Record", desc: "Part of an academy recognized by the District Education Department for academic excellence." }
+            { title: "Expert Faculty", desc: "Classes led by experienced educators." },
+            { title: "Systematic Approach", desc: "Ensuring no topic is left behind." },
+            { title: "Daily Practice Materials", desc: "Specialized workbooks and question analysis." },
+            { title: "Proven Track Record", desc: "Recognized for academic excellence." }
         ],
         offerings: [
             "Comprehensive study materials.",
             "OMR sheet handling practice.",
-            "Doubt-clearing sessions on weekends.",
-            "Performance tracking and parent-teacher updates.",
-            "Motivation sessions to build student confidence."
+            "Doubt-clearing sessions.",
+            "Performance tracking.",
+            "Motivation sessions."
         ],
         keyDetails: [
             { label: "Target Grade", value: "Students currently in 4th and 5th Standard." },
             { label: "Batch Timings", value: "Weekend and Evening batches available." },
-            { label: "Location", value: "Opp. J.H. Patel Circle, Behind Geleyara Balaga Primary School, Haveri." }
+            { label: "Location", value: "Gyanasiri Gurukula Navodaya Coaching Center Haveri." }
         ],
         cta: {
-            text: "Limited seats available for the upcoming Navodaya Entrance batch. Don't wait until it's too late!",
-            location: "Bankapur Branch"
+            text: "Limited seats available for the Navodaya Entrance batch. Join us today!",
+            location: "Haveri Branch"
         }
     },
     {
-        id: "weekend",
-        title: "Weekend Classes",
-        description: "Flexible learning modules for working parents' children, focusing on foundational maths and personality development.",
-        icon: <Calendar className="w-8 h-8 text-primary" />,
-        image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&h=600&fit=crop",
-        features: ["Concept Clarity", "Extra-Curricular Focus", "Small Batches", "Flexible Timings"]
-    },
-    {
-        id: "vedic-maths-advanced",
-        title: "Vedic Maths Advanced",
-        description: "Master complex calculations with ancient techniques. Ideal for high school students looking to gain a competitive edge.",
-        icon: <Brain className="w-8 h-8 text-primary" />,
-        image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&h=600&fit=crop",
-        features: ["Lightning Fast Speed", "Mental Agility", "Algebra Shortcuts", "Ancient Math Wisdom"]
-    },
-    {
-        id: "olympiad",
-        title: "Olympiad Prep",
-        description: "Specialized coaching for Science, Maths, and Cyber Olympiads. We focus on advanced problem-solving techniques.",
-        icon: <Target className="w-8 h-8 text-primary" />,
-        image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=800&h=600&fit=crop",
-        features: ["Advanced Concepts", "Analytical Skills", "Mock Olympiad Tests", "International Standard"]
-    },
-    {
-        id: "ntse",
-        title: "NTSE Coaching",
-        description: "Preparation for National Talent Search Examination. We cover MAT and SAT sections with expert guidance.",
-        icon: <Award className="w-8 h-8 text-primary" />,
-        image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=600&fit=crop",
-        features: ["MAT Specialist", "Mental Ability Training", "Previous Year Papers", "Competitive Prep"]
-    },
-    {
-        id: "science-robotics",
-        title: "Science & Robotics",
-        description: "Hands-on experience with basic robotics and science experiments to foster innovation and technical skills.",
-        icon: <FlaskConical className="w-8 h-8 text-primary" />,
-        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
-        features: ["Practical Learning", "STEM Education", "Critical Thinking", "Project Based"]
-    },
-    {
-        id: "spoken-english",
-        title: "Spoken English & Communication",
-        headline: "Master the Art of Conversation: Spoken English for All Ages",
-        description: "Build confidence and fluency in communication. Our program focuses on soft skills, public speaking, and real-world interactions.",
-        detailDescription: "Language is the key to opportunity. Whether you are a student looking to excel in interviews, a professional aiming for career growth, or an elder wanting to connect with the modern world, our Spoken English program is designed for you. At Greenary Academy, we move beyond textbook grammar to focus on real-world fluency, helping you speak English with confidence and clarity.",
-        icon: <MessageSquare className="w-8 h-8 text-primary" />,
-        image: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=800&h=600&fit=crop",
-        secondImage: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop",
+        id: "handwriting",
+        title: "Hand Writing classes",
+        headline: "The Art of Beautiful Writing",
+        description: "Improve penmanship, speed, and legibility with our specialized handwriting courses.",
+        detailDescription: "Good handwriting is a reflection of a disciplined mind. Our handwriting classes are designed to help students improve their writing style, speed, and legibility. Whether it is cursive, print, or calligraphy, we provide the right guidance to make your writing stand out.",
+        icon: <Palette className="w-8 h-8 text-primary" />,
+        image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&h=600&fit=crop",
+        secondImage: hand,
         features: [
-            "Phonetics & Pronunciation: Mastering basic sounds, vowels, and consonants to reduce mother-tongue influence.",
-            "Grammar Foundation: Simplified lessons on tenses, sentence structure, and parts of speech.",
-            "Daily Conversations: Practical training for simple dialogues, shopping, traveling, and social interactions.",
-            "The Art of Self-Introduction: Crafting a powerful personal introduction for social and professional settings.",
-            "Word Mastery: Building a rich vocabulary for clear and effective expression."
+            "Legibility Improvement: Make every word clear and readable.",
+            "Speed Writing: Maintain quality while writing faster.",
+            "Grip & Posture: Correct techniques for fatigue-free writing.",
+            "Style Variations: Cursive and Print calligraphy."
         ],
-        specialFeature: {
-            title: "Spoken English for Elders",
-            subtitle: "It's Never Too Late to Learn!",
-            desc: "We offer specialized, stress-free batches for senior citizens and elders. Our patient and supportive teaching environment helps elders learn English for travel, technology use, and speaking with grandchildren, ensuring they never feel left behind in a digital world."
-        },
         whyChoose: [
-            { title: "ISO 9001:2015 Certified Quality", desc: "A systematic and professional approach to language training." },
-            { title: "Interactive Learning", desc: "Focus on 'Speaking' rather than just 'Writing.' We use role-plays and group discussions." },
-            { title: "Expert Faculty Guidance", desc: "Under the academic supervision of Jayalakshmi Ma'am (MSc Mathematics)." },
-            { title: "Flexible Batches", desc: "Morning and evening slots available to suit students, housewives, and working professionals." }
+            { title: "Structured Practice", desc: "Scientific approach to letter formation." },
+            { title: "Individual Correction", desc: "Personalized feedback for every student." },
+            { title: "Confidence Booster", desc: "Good handwriting leads to better academic presentation." },
+            { title: "All Ages", desc: "Classes suitable for children and adults." }
+        ],
+        durations: [
+            { title: "Basic Course", duration: "1 Month", desc: "Letter formation & Grip" },
+            { title: "Advanced Course", duration: "2 Months", desc: "Speed & Style" },
+            { title: "Calligraphy", duration: "Variable", desc: "Artistic writing styles" }
         ],
         keyDetails: [
-            { label: "Course Levels", value: "Basic to Intermediate." },
-            { label: "Batch Type", value: "Personal attention with limited students." },
-            { label: "Location", value: "Opp. J.H. Patel Circle, Behind Geleyara Balaga Primary School, Haveri." }
+            { label: "Materials", value: "Practice books provided." },
+            { label: "Focus", value: "Neatness, Speed, Alignment." },
+            { label: "Location", value: "Haveri Branch" }
         ],
         cta: {
-            text: "Stop hesitating and start speaking. Join our next batch and transform your personality!",
-            location: "Bankapur Branch"
+            text: "Transform your handwriting today. Enroll now!",
+            location: "Haveri Branch"
         }
     }
 ];
@@ -246,7 +176,7 @@ export const PROGRAMS = [
 export const WHY_CHOOSE_US = [
     {
         title: "Expert Instruction",
-        desc: "Led by Jayalakshmi, a Senior Mathematics Lecturer with M.Sc Mathematics.",
+        desc: "Led by Deepa S Ballari, a Senior Mathematics Lecturer with M.A., M.Ed.",
         icon: <Users className="w-6 h-6" />
     },
     {
@@ -266,16 +196,19 @@ export const WHY_CHOOSE_US = [
     }
 ];
 
-export const GALLERY_IMAGES = [
-    { src: "https://picsum.photos/seed/class1/600/400", category: "Classroom" },
-    { src: "https://picsum.photos/seed/class2/600/400", category: "Events" },
-    { src: "https://picsum.photos/seed/class3/600/400", category: "Classroom" },
-    { src: "https://picsum.photos/seed/class4/600/400", category: "Competitions" },
-    { src: "https://picsum.photos/seed/class5/600/400", category: "Students" },
-    { src: "https://picsum.photos/seed/class6/600/400", category: "Events" },
-    { src: "https://picsum.photos/seed/class7/600/400", category: "Competitions" },
-    { src: "https://picsum.photos/seed/class8/600/400", category: "Classroom" },
-    { src: "https://picsum.photos/seed/class9/600/400", category: "Students" },
-];
+// Automatically import all images from assets/gallery
+const galleryModules = import.meta.glob('./assets/gallery/*.{jpeg,jpg,png,webp}', { eager: true, import: 'default' });
+
+const imageCategories = ["Classroom", "Events", "Competitions", "Students"];
+
+// Sort keys naturally (image1, image2, ... image10)
+const galleryKeys = Object.keys(galleryModules).sort((a, b) =>
+    a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })
+);
+
+export const GALLERY_IMAGES = galleryKeys.map((key, index) => ({
+    src: galleryModules[key],
+    category: imageCategories[index % imageCategories.length]
+}));
 
 export const GALLERY_CATEGORIES = ["All", "Classroom", "Events", "Competitions", "Students"];

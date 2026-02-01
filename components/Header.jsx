@@ -42,9 +42,9 @@ const Header = () => {
 
     const navLinks = [
         { name: 'Home', href: '/#home' },
+        { name: 'Instructor', href: '/#instructor' },
         { name: 'Programs', href: '/#programs' },
         { name: 'About Us', href: '/#about' },
-        { name: 'Instructor', href: '/#instructor' },
         { name: 'Gallery', href: '/#gallery' },
     ];
 
@@ -95,10 +95,11 @@ const Header = () => {
                                 );
                             })}
                             <a
-                                href={`tel:${ACADEMY_INFO.phone}`}
-                                className="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-emerald-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                                href={`https://wa.me/${ACADEMY_INFO.phone}`}
+                                className="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-emerald-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5 "
+                                target="_blank"
                             >
-                                Call Now
+                                WhatsApp
                             </a>
                         </nav>
 
